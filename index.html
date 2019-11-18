@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>点击色块</title>
+  <style>
+    body,div,img,ul{
+      padding: 0;
+      margin: 0;
+      float: left;
+    }
+    a {
+      text-decoration: none;
+      color: #272727;
+    }
+    button{
+      float: left;
+      list-style: none;
+      height: 334px;
+      width: 65px;
+      cursor: pointer;
+      margin-left:-4px;
+    }
+    #ban1 {
+      margin-left: 4px;
+      background-color: #00007F;
+    }
+    #ban2 {
+      background-color: #EE8800;
+    }
+    #ban3 {
+      position: relative;
+      background-color: #7F7F00;
+    }
+    #ban4 {
+      background-color: #2361AD;
+    }
+    button p {
+      color: #fff;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    li {
+      margin-left: 21px;
+      margin-top: 11px;
+      line-height: 1.5;
+      color: #272727;
+    }
+    .list {
+      float: left;
+      font-size: 12px;
+      width: 228px;
+      height: 334px;
+    }
+  </style>
+</head>
+<body>
+  <button id="ban1"><p>交通行业</p></button>
+  <div id="show1" style="display: none;">
+    <img src="images/1.png" alt="">
+    <ul class="list">
+      <li><a href="#">军事物资组套仓储管理系统</a></li>
+      <li><a href="#">集装箱电子铅封管理系统</a></li>
+      <li><a href="#">军用物资组套仓储管理系统</a></li>
+      <li><a href="#">集装箱电子铅封管理系统</a></li>
+      <li><a href="#">军事物资组套仓储管理系统</a></li>
+      <li><a href="#">集装箱电子铅封管理系统</a></li>
+      <li><a href="#">军事物资组套仓储管理系统</a></li>
+      <li><a href="#">集装箱电子铅封管理系统</a></li>
+      <li><a href="#">军事物资组套仓储管理系统</a></li>
+      <li><a href="#">集装箱电子铅封管理系统</a></li>
+      <li><a href="#">军事物资组套仓储管理系统</a></li>
+    </ul>
+  </div>
+  <button id="ban2"><p>司法行业</p></button>
+  <div id="show2" style="display: none;">
+    <img src="images/2.png" alt="">
+      <ul class="list">
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军用物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+      </ul>
+    </div>
+  <button id="ban3"><p>政府相关</p></button>
+  <div id="show3" style="display: none;">
+    <img src="images/3.png" alt="">
+      <ul class="list">
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军用物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+      </ul>
+    </div>
+  <button id="ban4"><p>其他行业</p></button>
+  <div id="show4" style="display: none;">
+    <img src="images/4.png" alt="">
+      <ul class="list">
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军用物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+        <li><a href="#">集装箱电子铅封管理系统</a></li>
+        <li><a href="#">军事物资组套仓储管理系统</a></li>
+      </ul>
+    </div>
+  <script>
+      var ban1=document.getElementById('ban1');
+      var ban2=document.getElementById('ban2');
+      var ban3=document.getElementById('ban3');
+      var ban4=document.getElementById('ban4');
+      var show1=document.getElementById('show1');
+      var show2=document.getElementById('show2');
+      var show3=document.getElementById('show3');
+      var show4=document.getElementById('show4');
+      show1.style.display='none';
+      show2.style.display='none';
+      show3.style.display='none';
+      show4.style.display='none';
+      ban1.onclick=function(){
+        if(show1.style.display==''){
+          show1.style.display='none';
+        }else{
+          show1.style.display='';
+        }
+        if(show2.style.display==''){
+          show2.style.display='none';
+        }
+        if(show3.style.display==''){
+          show3.style.display='none';
+        }
+        if(show4.style.display==''){
+          show4.style.display='none';
+        }
+      }
+      ban2.onclick=function(){
+        if(show2.style.display==''){
+          show2.style.display='none';
+        }else{
+          show2.style.display='';
+        }
+        if(show1.style.display==''){
+          show1.style.display='none';
+        }
+        if(show3.style.display==''){
+          show3.style.display='none';
+        }
+        if(show4.style.display==''){
+          show4.style.display='none';
+        }
+      }
+      ban3.onclick=function(){
+        if(show3.style.display==''){
+          show3.style.display='none';
+        }else{
+          show3.style.display='';
+        }
+        if(show1.style.display==''){
+          show1.style.display='none';
+        }
+        if(show2.style.display==''){
+          show2.style.display='none';
+        }
+        if(show4.style.display==''){
+          show4.style.display='none';
+        }
+      }
+      ban4.onclick=function(){
+        if(show4.style.display==''){
+          show4.style.display='none';
+        }else{
+          show4.style.display='';
+        }
+        if(show1.style.display==''){
+          show1.style.display='none';
+        }
+        if(show3.style.display==''){
+          show3.style.display='none';
+        }
+        if(show2.style.display==''){
+          show2.style.display='none';
+        }
+      }
+  </script>
+</body>
+</html>
