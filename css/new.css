@@ -1,0 +1,41 @@
+
+		.ctboxs{
+			width:590px;
+			height:710px;
+			position:relative;
+			overflow:hidden;
+		}
+		.ctboxs .ctbox{
+			width: 590px;
+			height: 540px;
+			position: absolute;
+			top: 0;
+			transition:2s linear;
+			display: flex;
+			flex-direction:column;
+		}
+		.ctboxs .ct1{top:0;}
+		.ctboxs .ct2{top:530px;}
+		.ctboxs .ct3{top:590px;}
+		.ctboxs .ct4{top:650px;}
+		.ctboxs .ctbox .tile{
+			height: 65px;
+			color: #fff;
+			font-size: 22px;
+			line-height: 1.5;
+			text-align:center;
+			cursor:pointer;
+			line-height: 60px;
+					}
+		 .ctboxs .ct1 .tile{
+			background: rgb(0,0,127);
+		}
+		.ctboxs .ct2 .tile{
+			background: rgb(238,136,0);
+		}
+		.ctboxs .ct3 .tile{
+			background: rgb(127,127,0);
+		}
+		.ctboxs .ct4 .tile{
+			background: rgb(35,97,173);
+		}
